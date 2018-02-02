@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8201954120210E5E00C30B45 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8201954020210E5E00C30B45 /* CustomCell.m */; };
+		8201954420227E0000C30B45 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8201954320227E0000C30B45 /* DetailController.m */; };
+		820195472023CE8200C30B45 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820195462023CE8200C30B45 /* MapKit.framework */; };
 		82554766201BF24D005FFC02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82554765201BF24D005FFC02 /* main.m */; };
 		82554769201BF24D005FFC02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82554768201BF24D005FFC02 /* AppDelegate.m */; };
 		8255476C201BF24D005FFC02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8255476B201BF24D005FFC02 /* ViewController.m */; };
 		8255476F201BF24D005FFC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8255476D201BF24D005FFC02 /* Main.storyboard */; };
 		82554771201BF24D005FFC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82554770201BF24D005FFC02 /* Assets.xcassets */; };
 		82554774201BF24D005FFC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82554772201BF24D005FFC02 /* LaunchScreen.storyboard */; };
+		8255477D201D088E005FFC02 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8255477C201D088E005FFC02 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8201953F20210E5E00C30B45 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		8201954020210E5E00C30B45 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		8201954220227E0000C30B45 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		8201954320227E0000C30B45 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		820195462023CE8200C30B45 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		82554761201BF24D005FFC02 /* CatMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82554765201BF24D005FFC02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82554767201BF24D005FFC02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +35,8 @@
 		82554770201BF24D005FFC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82554773201BF24D005FFC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82554775201BF24D005FFC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8255477B201D088E005FFC02 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		8255477C201D088E005FFC02 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820195472023CE8200C30B45 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		820195452023CE8200C30B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				820195462023CE8200C30B45 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82554758201BF24D005FFC02 = {
 			isa = PBXGroup;
 			children = (
 				82554763201BF24D005FFC02 /* CatMap */,
 				82554762201BF24D005FFC02 /* Products */,
+				820195452023CE8200C30B45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +83,12 @@
 				82554768201BF24D005FFC02 /* AppDelegate.m */,
 				8255476A201BF24D005FFC02 /* ViewController.h */,
 				8255476B201BF24D005FFC02 /* ViewController.m */,
+				8201954220227E0000C30B45 /* DetailController.h */,
+				8201954320227E0000C30B45 /* DetailController.m */,
+				8255477B201D088E005FFC02 /* Photo.h */,
+				8255477C201D088E005FFC02 /* Photo.m */,
+				8201953F20210E5E00C30B45 /* CustomCell.h */,
+				8201954020210E5E00C30B45 /* CustomCell.m */,
 				8255476D201BF24D005FFC02 /* Main.storyboard */,
 				82554770201BF24D005FFC02 /* Assets.xcassets */,
 				82554772201BF24D005FFC02 /* LaunchScreen.storyboard */,
@@ -111,6 +138,11 @@
 					82554760201BF24D005FFC02 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8255477D201D088E005FFC02 /* Photo.m in Sources */,
 				8255476C201BF24D005FFC02 /* ViewController.m in Sources */,
+				8201954420227E0000C30B45 /* DetailController.m in Sources */,
 				82554769201BF24D005FFC02 /* AppDelegate.m in Sources */,
 				82554766201BF24D005FFC02 /* main.m in Sources */,
+				8201954120210E5E00C30B45 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +344,7 @@
 				8255477A201BF24D005FFC02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
